@@ -2,11 +2,11 @@ package models;
 
 public class Vehicle {
 
-    public int year;
-    public String brand;
-    public String model;
-    public int miles;
-    public int price;
+    private int year;
+    private String brand;
+    private String model;
+    private int miles;
+    private int price;
 
     public Vehicle(int year, String brand, String model, int miles, int price) {
         this.year = year;
@@ -20,4 +20,23 @@ public class Vehicle {
         return (this.price < maxPrice);
     }
 
+    public int getYear() {
+        return year;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public int getMiles() {
+        return miles;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
 }
